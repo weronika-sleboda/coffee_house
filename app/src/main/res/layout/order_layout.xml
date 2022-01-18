@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient_background2">
+
+    <ImageView
+        android:id="@+id/trash_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_gravity="center"
+        app:tint="@color/light_green"
+        android:src="@drawable/garbage_can"/>
+
+    <TextView
+        android:id="@+id/order_item_name"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/light_brown"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_light"/>
+
+    <TextView
+        android:id="@+id/order_item_price"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/light_brown"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_light"/>
+
+</LinearLayout>

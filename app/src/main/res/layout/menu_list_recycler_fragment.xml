@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="cart"
+            type="com.weronika.coffeehouse.viewmodel.CartViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:id="@+id/menu_list_recycler"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/order_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxImageSize="50dp"
+            app:fabCustomSize="60dp"
+            app:tint="@color/light_green"
+            android:src="@drawable/accept"
+            app:layout_anchor="@id/cart_bottom_bar"
+            app:backgroundTint="@color/brown"/>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/cart_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="end"
+            app:fabCradleMargin="10dp"
+            app:backgroundTint="@color/dark_brown"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/light_brown"
+                android:textSize="18sp"
+                android:layout_marginEnd="40dp"
+                android:text="@{cart.amountToString()}"/>
+
+            <TextView
+                android:id="@+id/remove_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:text="@string/remove"/>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

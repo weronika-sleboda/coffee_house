@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Coffee House</string>
+    <string name="coffee_house">Coffee House</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="create_account"><u>CREATE ACCOUNT</u></string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="create">Create</string>
+    <string name="crate_account_2">Crate account</string>
+    <string name="menu">Menu</string>
+    <string name="profile">Profile</string>
+    <string name="remove"><u>Remove</u></string>
+    <string name="your_cart">Your cart:</string>
+    <string name="order">Order</string>
+    <string name="order_has_been_accepted">Your order has been accepted.</string>
+    <string name="ok">ok</string>
+    <string name="go_to_log_in_string"><u>LOG IN</u></string>
+</resources>

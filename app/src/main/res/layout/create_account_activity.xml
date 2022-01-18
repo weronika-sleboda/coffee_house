@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="account"
+            type="com.weronika.coffeehouse.viewmodel.AccountViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/dark_brown"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        tools:context=".view.CreateAccountActivity">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/light_brown"
+            android:text="@string/crate_account_2"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:id="@+id/first_name_edit_text"
+            android:maxHeight="40dp"
+            android:maxLength="50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/first_name"
+            android:text="@{account.firstName()}"
+            android:textColor="@color/dark_brown"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_light"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start|center"/>
+
+        <EditText
+            android:id="@+id/last_name_edit_text"
+            android:maxHeight="40dp"
+            android:maxLength="50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/last_name"
+            android:text="@{account.lastName()}"
+            android:textColor="@color/dark_brown"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_light"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start|center"/>
+
+        <EditText
+            android:id="@+id/user_email_edit_text"
+            android:maxHeight="40dp"
+            android:maxLength="50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/email"
+            android:text="@{account.email()}"
+            android:textColor="@color/dark_brown"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_light"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start|center"/>
+
+        <EditText
+            android:id="@+id/user_password_edit_text"
+            android:maxHeight="40dp"
+            android:maxLength="50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/password"
+            android:text="@{account.password()}"
+            android:textColor="@color/dark_brown"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_light"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start|center"/>
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/create"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/light_brown"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/go_to_log_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="start"
+            android:maxEms="30"
+            android:text="@string/go_to_log_in_string"/>
+
+    </LinearLayout>
+</layout>

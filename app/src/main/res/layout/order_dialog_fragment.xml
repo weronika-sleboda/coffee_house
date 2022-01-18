@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_brown"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/light_brown"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/dark_brown"
+        android:text="@string/coffee_house"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:fontFamily="@font/poppins_thin"
+        android:textColor="@color/dark_brown"
+        android:padding="30dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/light_brown"
+        android:text="@string/order_has_been_accepted"/>
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/ok"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/light_brown"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_background"/>
+</LinearLayout>
